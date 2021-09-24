@@ -1,0 +1,264 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6900 4500 6600 4500
+Text Label 6600 4500 0    70   ~ 0
+AUX
+Wire Wire Line
+	7700 3800 7400 3800
+Text Label 7400 3800 0    70   ~ 0
+AUX
+Wire Wire Line
+	6900 4600 6600 4600
+Text Label 6600 4600 0    70   ~ 0
+VCC
+Wire Wire Line
+	6900 3100 6600 3100
+Text Label 6600 3100 0    70   ~ 0
+VCC
+Wire Wire Line
+	3700 4500 3600 4500
+Text Label 3700 4500 0    10   ~ 0
+VCC
+Wire Wire Line
+	6900 4700 6600 4700
+Text Label 6600 4700 0    70   ~ 0
+SWDIO
+Wire Wire Line
+	5000 4500 5100 4500
+Text Label 5100 4500 0    70   ~ 0
+SWDIO
+Wire Wire Line
+	6900 4800 6600 4800
+Text Label 6600 4800 0    70   ~ 0
+SWDCLK
+Wire Wire Line
+	5000 4600 5100 4600
+Text Label 5100 4600 0    70   ~ 0
+SWDCLK
+Wire Wire Line
+	6900 4900 6600 4900
+Text Label 6600 4900 0    70   ~ 0
+GND
+Wire Wire Line
+	3700 4600 3600 4600
+Wire Wire Line
+	3600 4600 3600 4700
+Wire Wire Line
+	3600 4700 3700 4700
+Wire Wire Line
+	3700 4900 3600 4900
+Wire Wire Line
+	3600 4900 3600 4700
+Wire Wire Line
+	3600 5000 3600 4900
+Connection ~ 3600 4700
+Connection ~ 3600 4900
+Text Label 3700 4600 0    10   ~ 0
+GND
+Wire Wire Line
+	6900 3900 6600 3900
+Wire Wire Line
+	6600 3900 6600 4000
+Text Label 6900 3900 0    10   ~ 0
+GND
+Wire Wire Line
+	5600 4300 5600 4400
+Connection ~ 5600 4400
+Text Label 5600 4300 0    10   ~ 0
+GND
+Wire Wire Line
+	7700 3900 7400 3900
+Wire Wire Line
+	7400 3900 7400 4000
+Text Label 7700 3900 0    10   ~ 0
+GND
+Wire Wire Line
+	6900 5000 6600 5000
+Text Label 6600 5000 0    70   ~ 0
+~RESET
+Wire Wire Line
+	5000 4900 5100 4900
+Text Label 5100 4900 0    70   ~ 0
+~RESET
+Wire Wire Line
+	6000 4300 6000 4400
+Wire Wire Line
+	6000 4300 6100 4300
+Connection ~ 6000 4300
+Text Label 6100 4300 0    70   ~ 0
+~RESET
+Wire Wire Line
+	5000 4800 5100 4800
+Text Label 5100 4800 0    70   ~ 0
+TDI
+Wire Wire Line
+	6900 5300 6600 5300
+Text Label 6600 5300 0    70   ~ 0
+TDI
+Wire Wire Line
+	5000 4700 5100 4700
+Text Label 5100 4700 0    70   ~ 0
+SWO
+Wire Wire Line
+	6900 5400 6600 5400
+Text Label 6600 5400 0    70   ~ 0
+SWO
+Wire Wire Line
+	5700 3100 5600 3100
+Text Label 5600 3100 0    70   ~ 0
+VCC2
+Wire Wire Line
+	6900 3800 6600 3800
+Text Label 6600 3800 0    70   ~ 0
+VCC2
+Wire Wire Line
+	6900 3000 6100 3000
+Text Label 6400 3000 0    70   ~ 0
+VCC_IN
+$Comp
+L adapter-eagle-import:CORTEX_DEBUG_PTH JLINKEDUMINI1
+U 1 1 8086C104
+P 4300 4700
+F 0 "JLINKEDUMINI1" H 3800 5010 70  0000 L BNN
+F 1 "CORTEX_DEBUG_PTH" H 3800 4310 70  0000 L BNN
+F 2 "adapter:2X5-PTH-1.27MM" H 4300 4700 50  0001 C CNN
+F 3 "" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:PINHD-1X6 JP1
+U 1 1 2F430EF2
+P 7000 4800
+F 0 "JP1" H 6750 5225 59  0000 L BNN
+F 1 "PINHD-1X6" H 6750 4400 59  0000 L BNN
+F 2 "adapter:1X06" H 7000 4800 50  0001 C CNN
+F 3 "" H 7000 4800 50  0001 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:GND #GND01
+U 1 1 DB8695AC
+P 3600 5100
+F 0 "#GND01" H 3600 5100 50  0001 C CNN
+F 1 "GND" H 3500 5000 59  0000 L BNN
+F 2 "" H 3600 5100 50  0001 C CNN
+F 3 "" H 3600 5100 50  0001 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:PINHD-1X2 JP2
+U 1 1 FA93C76E
+P 7000 3900
+F 0 "JP2" H 6750 4125 59  0000 L BNN
+F 1 "PINHD-1X2" H 6750 3700 59  0000 L BNN
+F 2 "adapter:1X02" H 7000 3900 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:GND #GND02
+U 1 1 13A376EC
+P 6600 4100
+F 0 "#GND02" H 6600 4100 50  0001 C CNN
+F 1 "GND" H 6500 4000 59  0000 L BNN
+F 2 "" H 6600 4100 50  0001 C CNN
+F 3 "" H 6600 4100 50  0001 C CNN
+	1    6600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:PINHD-1X2 JP3
+U 1 1 ACD8E5B6
+P 7000 3100
+F 0 "JP3" H 6750 3325 59  0000 L BNN
+F 1 "PINHD-1X2" H 6750 2900 59  0000 L BNN
+F 2 "adapter:1X02" H 7000 3100 50  0001 C CNN
+F 3 "" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:S-ON-ON S1
+U 1 1 CEBFFD5E
+P 5900 3100
+F 0 "S1" V 5650 3025 59  0000 L BNN
+F 1 "S-ON-ON" V 5750 3225 59  0000 L BNN
+F 2 "adapter:ES_100SP1T6B11M2QEH" H 5900 3100 50  0001 C CNN
+F 3 "" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adapter-eagle-import:TAC_SWITCHPTH RESET1
+U 1 1 0DBEFA40
+P 5800 4300
+F 0 "RESET1" H 5700 4550 59  0000 L BNN
+F 1 "TAC_SWITCHPTH" H 5700 4050 59  0000 L BNN
+F 2 "adapter:TACTILE-PTH" H 5800 4300 50  0001 C CNN
+F 3 "" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:GND #GND03
+U 1 1 7679BDCC
+P 5600 4500
+F 0 "#GND03" H 5600 4500 50  0001 C CNN
+F 1 "GND" H 5500 4400 59  0000 L BNN
+F 2 "" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:PINHD-1X2 JP4
+U 1 1 47274FB3
+P 7000 5400
+F 0 "JP4" H 6750 5625 59  0000 L BNN
+F 1 "PINHD-1X2" H 6750 5200 59  0000 L BNN
+F 2 "adapter:1X02" H 7000 5400 50  0001 C CNN
+F 3 "" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:PINHD-1X2 JP5
+U 1 1 6716FC81
+P 7800 3900
+F 0 "JP5" H 7550 4125 59  0000 L BNN
+F 1 "PINHD-1X2" H 7550 3700 59  0000 L BNN
+F 2 "adapter:1X02" H 7800 3900 50  0001 C CNN
+F 3 "" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L adapter-eagle-import:GND #GND04
+U 1 1 D896219B
+P 7400 4100
+F 0 "#GND04" H 7400 4100 50  0001 C CNN
+F 1 "GND" H 7300 4000 59  0000 L BNN
+F 2 "" H 7400 4100 50  0001 C CNN
+F 3 "" H 7400 4100 50  0001 C CNN
+	1    7400 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
